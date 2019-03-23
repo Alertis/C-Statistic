@@ -118,3 +118,17 @@ int harmonicAvrCalculate (int data[]){
     har=(float)arrSize/val;
     printf("\n Harmonik Ortalama %f ",har);
 }
+
+int sDCalculate (int data[]){
+    float tmp,total=0;
+     arithAvrCalculate(data);
+     for(int i=0; i<arrSize; i++){
+        tmp=data[i]-arithAvr;
+        tmp=pow(tmp,2);
+        tmp=tmp/(arrSize-1);
+        total=total+tmp;
+     }
+     total=sqrt(total);
+     printf("\n Standart Sapma %f",total);
+}
+
