@@ -102,3 +102,11 @@ int arithAvrCalculate(int data[]){
     arithAvr=(float)(total/arrSize);
     printf("\n Aritmetik Ortalama %f",arithAvr);
 }
+
+int geoAvrCalculate(int data[]){
+    int val=1;
+    for(int i=0; i<arrSize; i++)
+       val=val*data[i];
+
+    printf("\n Geometrik Ortalama %f",pow(val,1/(double)arrSize));
+}
