@@ -82,3 +82,15 @@ int modeCalculate (int data[]){
     }
     printf("\n Mod: %d",modeval);
 }
+
+int medianCalculate (int data[]){
+    float median;
+    data=sortArray(data);
+    if(arrSize%2==0){
+       median=(data[arrSize/2]+data[(arrSize/2)-1])/2;
+    }else{
+        median=data[(arrSize/2)+1];
+    }
+
+    printf("Medyan %f",median);
+}
