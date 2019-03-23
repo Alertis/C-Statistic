@@ -110,3 +110,11 @@ int geoAvrCalculate(int data[]){
 
     printf("\n Geometrik Ortalama %f",pow(val,1/(double)arrSize));
 }
+
+int harmonicAvrCalculate (int data[]){
+ float har,val=0;
+    for(int i=0; i<arrSize; i++)
+       val=val+data[i];
+    har=(float)arrSize/val;
+    printf("\n Harmonik Ortalama %f ",har);
+}
