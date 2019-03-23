@@ -66,3 +66,19 @@ int chooseMenu( int data[]){
 
     }
 }
+
+int modeCalculate (int data[]){
+    int counter,mode=0,modeval;
+    for(int i=0; i<arrSize; i++){
+        counter=0;
+        for(int k=0; data[k+1]; k++){
+            if(data[k] == data[i])
+                counter++;
+            if(counter>mode){
+                mode=counter;
+                modeval=data[i];
+            }
+        }
+    }
+    printf("\n Mod: %d",modeval);
+}
