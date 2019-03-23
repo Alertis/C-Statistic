@@ -94,3 +94,11 @@ int medianCalculate (int data[]){
 
     printf("Medyan %f",median);
 }
+
+int arithAvrCalculate(int data[]){
+    float total=0;
+    for(int i=0; i<arrSize; i++)
+       total=total+data[i];
+    arithAvr=(float)(total/arrSize);
+    printf("\n Aritmetik Ortalama %f",arithAvr);
+}
