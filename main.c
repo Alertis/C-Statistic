@@ -132,3 +132,18 @@ int sDCalculate (int data[]){
      printf("\n Standart Sapma %f",total);
 }
 
+int sortArray( int data[]){
+    int tmp;
+    for(int i=0; i<arrSize; i++){
+        for(int j=0; data[j+1]; j++){
+            if(data[j]>data[j+1]){
+                tmp=data[j];
+                data[j]=data[j+1];
+                data[j+1]=tmp;
+            }
+        }
+    }
+    return data;
+}
+
+
